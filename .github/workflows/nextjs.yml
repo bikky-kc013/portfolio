@@ -32,13 +32,13 @@ jobs:
 
       - name: Build Next.js site
         run: |
-          npm run build
+          TAILWIND_MODE=build npm run build
           npm run export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out  
+          path: ./out
   deploy:
     environment:
       name: github-pages
