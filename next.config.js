@@ -1,6 +1,5 @@
 const nextConfig = {
   output: "export",
-  basePath: "/bikky-portfolio",
   images: {
     unoptimized: true,
   },
