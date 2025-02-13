@@ -33,7 +33,7 @@ jobs:
       - name: Build Next.js site
         run: |
           npm run build
-          npx serve@latest out
+          npx serve@latest -y out
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
